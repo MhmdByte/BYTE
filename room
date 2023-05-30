@@ -236,6 +236,6 @@ class Proxy:
                             if client.send(dataS) <= 0:
                                 break
             except:
-                pass                      
-ip = socket.gethostbyname(socket.gethostname())                    
-Proxy().run(ip,1080)
+                pass     
+def startbot():
+    Proxy().run("127.0.0.1",1080)
